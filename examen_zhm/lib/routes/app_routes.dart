@@ -7,10 +7,25 @@ class AppRoutes {
 
   static final MenuOptions = <MenuOption>[
     MenuOption(
-      route: 'home', 
-      icon: Icons.house_rounded, 
+      route: 'home',
       name: 'Home Screen', 
       screen: const HomeScreen()),
+      MenuOption(
+      route: 'signin',
+      name: 'Sign In Screen', 
+      screen: const SignInScreenZhm()),
+      MenuOption(
+      route: 'listview',
+      name: 'Listview Screen', 
+      screen: const ListviewScreenZhm()),
+      MenuOption(
+      route: 'pistas',
+      name: 'Pistas Screen', 
+      screen: const PistasScreenZhm()),
+      MenuOption(
+      route: 'monitores',
+      name: 'Monitores Screen', 
+      screen: const MonitoresScreenZhm()),
     
   ];
 
@@ -25,11 +40,11 @@ class AppRoutes {
 
   }
 
-  static Route<dynamic> onGenerateRoute (RouteSettings settings) {
+  /* static Route<dynamic> onGenerateRoute (RouteSettings settings) {
         return MaterialPageRoute(
           builder: (context) => const AlertScreen()
         );
-      }
+      } */
   
 
 }
